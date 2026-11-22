@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPIPay Verify - Secure UPI Payment & Verification Portal</title>
+    <meta name="description" content="Secure UPI payment portal with AI-powered screenshot verification and automated order delivery." />
+    <meta property="og:title" content="UPIPay Verify - Secure UPI Payment & Verification Portal" />
+    <meta property="og:description" content="Secure UPI payment portal with AI-powered screenshot verification and automated order delivery." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Gracefully ignore WebSocket errors from Vite HMR in AI Studio dev environment per platform constraints
+      (function() {
+        const origConsoleError = console.error;
+        console.error = function(...args) {
+          const text = args.map(function(a) {
+            return (a instanceof Error ? (a.message + ' ' + (a.stack || '')) : String(a));
+          }).join(' ');
+          if (text.includes('WebSocket') || text.includes('websocket') || text.includes('vite:ws')) {
+            return;
+          }
+          return origConsoleError.apply(console, args);
+        };
+        window.addEventListener('error', function (e) {
+          if (e && e.message && e.message.toLowerCase().includes('websocket')) {
+            e.stopImmediatePropagation();
+            if (e.preventDefault) e.preventDefault();
+          }
+        }, true);
+        window.addEventListener('unhandledrejection', function (e) {
+          const msg = (e && e.reason && (typeof e.reason === 'string' ? e.reason : (e.reason && e.reason.message) || '')) || '';
+          if (msg.toLowerCase().includes('websocket')) {
+            e.stopImmediatePropagation();
+            if (e.preventDefault) e.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

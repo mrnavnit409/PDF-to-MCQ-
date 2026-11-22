@@ -1,0 +1,62 @@
+{
+  "settings": {
+    "upiId": "merchant.upi@okhdfcbank",
+    "receiverName": "AI Studio Digital Store",
+    "adminPassword": "admin123",
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587,
+    "smtpUser": "",
+    "smtpPass": "",
+    "smtpFrom": "noreply@upipayverify.com"
+  },
+  "products": [
+    {
+      "id": "prod_free_trial",
+      "name": "Free Trial: Starter AI Tools & Developer Templates",
+      "price": 0,
+      "description": "100% Free Trial access to starter prompts, AI workflows, and sample templates. No payment required.",
+      "downloadLink": "https://github.com/google/gemini-cookbook"
+    },
+    {
+      "id": "prod_masterclass",
+      "name": "Exclusive AI Developer Masterclass & Source Bundle",
+      "price": 9,
+      "description": "Get instant access to production-ready AI workflows, secret prompt libraries, and full-stack source code templates.",
+      "downloadLink": "https://github.com/google/gemini-cookbook"
+    },
+    {
+      "id": "prod_ebook",
+      "name": "Advanced Prompt Engineering E-Book (2026 Edition)",
+      "price": 49,
+      "description": "Master advanced prompt techniques, chain-of-thought architecture, and agentic workflows.",
+      "downloadLink": "https://ai.google.dev/gemini-api/docs"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-3MRGQI-0283",
+      "productName": "Free Trial: Starter AI Tools & Developer Templates",
+      "productPrice": 0,
+      "customerEmail": "",
+      "verificationStatus": "verified",
+      "verificationDetails": {
+        "amountMatch": true,
+        "receiverMatch": true,
+        "timeMatch": true,
+        "isAuthentic": true,
+        "extractedAmount": 0,
+        "extractedReceiver": "AI Studio Digital Store",
+        "transactionId": "FREE-TRIAL-XZNWNE",
+        "extractedTime": "2026-11-22T15:06:20.283Z",
+        "reason": "Free Trial product activated - no payment required."
+      },
+      "emailVerificationStatus": "pending",
+      "orderDate": "2026-11-22T15:06:20.283Z",
+      "deliveryStatus": "locked"
+    }
+  ],
+  "adminTokens": [
+    "admin_token_691jez2ou2p1795359349360",
+    "admin_token_5mr26mbcco1795359357237"
+  ]
+}

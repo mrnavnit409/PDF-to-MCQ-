@@ -1,0 +1,6 @@
+{
+  "name": "UPIPay Verify - Secure UPI Payment & Verification Portal",
+  "description": "A complete UPI payment verification website with AI-powered payment screenshot analysis, email OTP verification, automated order unlocking, and a powerful Admin Panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
